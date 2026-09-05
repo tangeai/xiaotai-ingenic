@@ -1,0 +1,73 @@
+# 第三方组件与 SDK
+
+## 迁移后的适用范围
+
+本仓保留各项目原有版权、LICENSE、NOTICE 和 SDK 来源记录。根 MIT 仅覆盖对应权利人的原创内容，不为 TiRTC SDK、供应商代码、第三方字体或媒体重新授权。没有随 SDK 附带开源许可证，不等于可以按 MIT 使用或分发；应按供应方提供的条款核对。
+
+君正项目保留供应商覆盖层、SDK 和素材来源记录。供应商完整 SDK、工具链和 Cloner 从授权渠道获取；素材的具体来源见[ASSET_LICENSE](../g32s10x/sdk-integration-examples/assets/ASSET_LICENSE.md)。S3/P4 的组件详情在[乐鑫仓](https://github.com/tangeai/xiaotai-esp32/blob/main/docs/THIRD_PARTY_NOTICES_CN.md)，下列相关内容仅作为原统一仓历史说明保留。
+
+## 原公开版本来源说明
+
+以下 SDK 版本、SHA 与补丁描述沿用旧统一仓公开记录，不代表迁移时替换或重新构建过这些组件。实际项目范围见[本仓版本入口](VERSIONS_CN.md#迁移后的项目入口)。
+
+仓库根目录的 MIT License 适用于探鸽智能在本仓库中提供的原创代码、文档和自有文档配图。四章
+TiRTC 开发者指南使用的 `docs/assets/webrtc-overview/` 与 `docs/assets/developer-guide/` 配图属于该
+范围；图中为说明用途出现的第三方名称、Logo 和商标仍归各自权利人。下列内容保留其
+各自的版权、许可和分发条款，不因进入本仓库而改为 MIT：
+
+- Espressif、LVGL、Waveshare、Ingenic 及其他第三方组件和供应商源码。
+- `components/tirtc_sdk/` 或 `sdk/` 中的 TiRTC SDK 头文件与目标平台静态库。
+- 第三方字体、图像、音视频测试素材，以及来自供应商或第三方工具链的生成资源。
+
+ESP32-S3 Device Monitor `1.9.7` 继续使用 TiRTC SDK `2.3.0 mini` 官方基础包及项目修复快照。SDK BuildInfo 为
+`v2.3.0-db7290f`，静态库大小为 `2,127,226` bytes，SHA-256 为
+`f5eca6c3212a34d00ce5706e864f8112adc8e6b20b92bc175435299caf4b082b`。该快照以
+active-connect `db7290f2404b15f2ab8567dd221853ca2ec054ab` 为功能基础，并包含
+`13e34c3e3e3dc6776be4713b5c1e3c17bd282766` 的 HTTPS 服务端认证修复。公开归档使用
+`--strip-debug` 移除 SDK 内部源码路径和行号级调试信息，BuildInfo、成员、全局符号以及运行
+代码和只读数据契约保持一致。该项目同时使用 TGTRP BuildInfo `tagv1.5.11-41c9a257` 和包元数据中的 TGWebRTC ref
+`tag.v1.5.12 / 41c9a25768ffe265c07f17ef78a6439607b19364`。完整身份以项目
+`components/tirtc_sdk/VERSION.md`、`VERSION.md`、`SOURCE_PROVENANCE.md` 和 Release
+manifest 为准；SDK 头文件和静态库保留供应方条款，不因本仓 MIT License 改为 MIT。
+
+ESP32-P4 Device Monitor `1.5.3` 使用 TiRTC `2.3.0` P4 验证重建与补丁版，不是未经修改的
+官方包。Nano 源码为 `13e34c3e3e3dc6776be4713b5c1e3c17bd282766`，TGWebRTC 源码为
+`e39114731ad488c88573d16f0855a1326d97c989`，另含校验标识为
+`e5b3109cc0dee3f0d8958c23a60f69b236d87acb909cac95c4d6bb24812dbbaf` 的补丁集。
+P4 `libTiRTC.a` 大小为 `4,748,802` bytes，SHA-256 为
+`a7a01ffd496a55364c7e4d665ff3884d078147bba96752a965d97befca12e451`。
+公开归档使用 `--strip-debug` 移除调试信息中的构建路径和行号，99 个成员的分配节内容、
+运行符号、重定位和归档符号索引保持等价；SDK 源码行号调试需使用本地保留的原始归档。
+详细文件身份与补丁范围以项目 `components/tirtc_sdk/VERSION.md`、`SHA256SUMS.txt` 和
+`SOURCE_PROVENANCE.md` 为准；未被 P4 链接的 S3 静态库不进入 P4 公开目录。
+
+该项目中的 `components/espressif__esp_h264/` 以 Espressif `esp_h264 1.3.8` 为基线，并
+包含 P4 项目所需的输出边界、参考帧池和码率控制补丁。组件不是整目录逐字节等同上游；
+Espressif 原始许可证文件继续随组件保留。
+
+`components/espressif__esp_hosted/` 同样保留项目补丁，包括 PSRAM streaming RX、SDIO
+寄存器快照检查和 TX throttle 诊断。当前依赖没有 `esp_hosted_event.h`，Hosted 事件与心跳
+恢复分支不参与编译；应用现有恢复由 Wi-Fi RPC 错误触发。组件防护和恢复代码不等同于
+已证明物理 SDIO 故障根因消除。
+
+P4 Device Monitor、S3 Device Monitor 和 S3/P4 最小集成示例复用同一份 TiRTC H264
+协议测试素材 `send_video.h264`。文件大小为 `298,486` bytes，SHA-256 为
+`06fe8e1cd3376ce1580b92d17a31ce6c89372d3d1195d258941a568199d04eea`；它只用于固定码流
+联调，不代表摄像头实采能力。该素材与 TiRTC SDK 均不适用仓库根 MIT License；使用和再分发
+应遵循 TiRTC SDK/测试素材供应方条款。
+
+ESP32-S3 最小系统例子的 `audio.g711a` 和 `video.h264` 测试输入来自
+[`tirtc-server-example/thing-connect/device-sim/assets`](https://github.com/tangeai/tirtc-server-example/tree/main/thing-connect/device-sim/assets)。
+五个 `ai_*.g711a` 短语音提示由 Windows 本地 `Microsoft Huihui Desktop` 语音合成，
+仅用于固定协议测试。这些来源说明不改变编解码器、语音组件或输出可能适用的条款；
+二次分发和商用前应结合使用环境核对相应许可。
+
+ESP32-P4 最小系统例子使用 TiRTC `2.3.0` 定制兼容快照、ESP-Hosted `2.12.11` 和
+ESP-WiFi-Remote `1.6.3`。P4 固件复用同一组协议测试媒体，并保留 C6/C61 同包兼容所需的
+ESP-Hosted 源码与 Apache-2.0 许可证；各组件具体身份以项目 `VERSION.md`、
+`SOURCE_PROVENANCE.md` 和 Release manifest 为准。
+
+已有许可证文件会随对应组件保留在项目目录中；TiRTC SDK 目录没有单独附带开源许可证。
+使用、修改或再分发前，请同时核对目标项目的 `SOURCE_PROVENANCE.md`、组件目录中的
+`LICENSE`/`NOTICE`，以及 SDK 或素材供应方提供的条款。
+未随公开仓分发的供应商 SDK、工具链和烧录工具，需要开发者从相应授权渠道单独获取。

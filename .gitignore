@@ -1,0 +1,34 @@
+# ESP-IDF and local build outputs
+**/build/
+**/build-*/
+**/managed_components/
+**/sdkconfig
+**/sdkconfig.old
+
+# G32 source overlays happen to use vendor directories named "build".
+!g32s10x/sdk-integration-examples/port/g32/vendor_overrides/package/build/
+!g32s10x/sdk-integration-examples/port/g32/vendor_overrides/package/build/build.mk
+!g32s10x/complete-applications/device-monitor/integration/vendor_overrides/build/
+!g32s10x/complete-applications/device-monitor/integration/vendor_overrides/build/fs.mk
+
+# Firmware release outputs belong to GitHub Releases
+**/release_assets/
+**/artifacts/
+**/releases/
+*.bin
+*.elf
+*.map
+*.yaffs2
+*.uf2
+*.hex
+*.zip
+*.tgz
+*.tar.gz
+
+# Local/editor files
+.vscode/
+*.log
+*.tmp
+*.bak
+__pycache__/
+*.pyc
