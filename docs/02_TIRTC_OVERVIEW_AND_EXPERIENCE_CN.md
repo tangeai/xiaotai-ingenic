@@ -1,6 +1,6 @@
 # 第二章：聊聊 TiRTC 的设计和体验
 
-> 本章保留跨平台原理与原公开案例。S3/P4 专属实现请对照[小钛 ESP32 文档](https://github.com/tangeai/xiaotai-esp32/blob/main/docs/README_CN.md)；君正实际能力与构建入口见[G32S10X 工程](../g32s10x/sdk-integration-examples/README.md)，这些案例不代表君正真机验证。
+> 本章保留跨平台原理与原公开案例。S3/P4 专属实现请对照[小钛 ESP32 文档](https://github.com/tangeai/xiaotai)；君正实际能力与构建入口见[G32S10X 工程](../g32s10x/sdk-integration-examples/README.md)，这些案例不代表君正真机验证。
 
 WebRTC 已经解决了网络穿透、连接协商和实时音视频传输，为什么设备接入时还需要 TiRTC？
 
@@ -64,6 +64,6 @@ WebRTC 已经解决了网络穿透、连接协商和实时音视频传输，为�
 入口和逐步操作见：
 
 - [TiRTC 开发者平台](https://demo-open.tange-ai.com/)
-- [ESP32-S3 完整设备体验流程（跨平台参考）](https://github.com/tangeai/xiaotai-esp32/blob/main/esp32-s3/complete-applications/device-monitor/docs/USER_EXPERIENCE_FLOW_CN.md)
+- [ESP32-S3 完整设备体验流程（跨平台参考）](https://github.com/tangeai/xiaotai)
 
 这一章先回答“设备上能玩什么、按下去会发生什么”。下一章进入[具体代码实现](03_TIRTC_DEVELOPMENT_CN.md)，保持同一顺序打开代码：每到一个功能，就在现场解释它怎样连接、传什么数据、收什么回调以及怎样退出。帧长、缓冲、码率、AEC 和弱网参数统一留到第四章。

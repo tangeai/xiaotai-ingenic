@@ -1,6 +1,6 @@
 # 第一章：WebRTC 是什么
 
-> 本章保留跨平台原理与原公开案例。S3/P4 专属实现请对照[小钛 ESP32 文档](https://github.com/tangeai/xiaotai-esp32/blob/main/docs/README_CN.md)；君正实际能力与构建入口见[G32S10X 工程](../g32s10x/sdk-integration-examples/README.md)，这些案例不代表君正真机验证。
+> 本章保留跨平台原理与原公开案例。S3/P4 专属实现请对照[小钛 ESP32 文档](https://github.com/tangeai/xiaotai)；君正实际能力与构建入口见[G32S10X 工程](../g32s10x/sdk-integration-examples/README.md)，这些案例不代表君正真机验证。
 
 刚烧录好一块开发板，屏幕显示已经连上 Wi-Fi，还拿到了 IP 地址。很多人这时会冒出同一个想法：
 

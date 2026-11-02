@@ -59,4 +59,4 @@ cd g32s10x/sdk-integration-examples
 
 `--depth 1` 限制历史，`--filter=blob:none` 在服务端支持时按需获取文件内容，sparse-checkout 控制检出范围。后续切换项目或读取其他历史可能再次下载；这里不承诺固定体积。Tag 检出后处于 detached HEAD，修改代码前可另建工作分支。
 
-已按公开源码静态检查本项目没有需要一并检出的兄弟工程依赖；本次没有执行稀疏检出构建、烧录或真机验证。S3/P4 的构建与固件入口见[小钛 ESP32 下载说明](https://github.com/tangeai/xiaotai-esp32/blob/main/docs/RELEASES_CN.md)。
+已按公开源码静态检查本项目没有需要一并检出的兄弟工程依赖；本次没有执行稀疏检出构建、烧录或真机验证。S3/P4 的构建与固件入口见[小钛 ESP32 下载说明](https://github.com/tangeai/xiaotai)。

@@ -10,7 +10,7 @@
 
 最小集成聚焦网络、SDK 生命周期和预录媒体发送；完整应用包含君正平台适配、界面、设备绑定与业务流程。供应商 SDK、交叉工具链和 Cloner 需要从授权渠道单独获取，具体版本与覆盖层接入步骤见项目 README。
 
-ESP32-S3、ESP32-P4 和启明 P4 工程在 [小钛 ESP32 仓](https://github.com/tangeai/xiaotai-esp32)。四章开发者指南继续保留在本仓；其中的 S3/P4 实现是跨平台参考，不代表君正外设或媒体能力已经验证。
+乐鑫项目的当前支持板型、固件和烧录说明统一从[小钛项目主页](https://github.com/tangeai/xiaotai)进入。四章开发者指南继续保留在本仓；其中的 S3/P4 实现是跨平台参考，不代表君正外设或媒体能力已经验证。
 
 ## 先体验，还是先改代码
 
@@ -42,7 +42,7 @@ GitHub 的 **Download ZIP** 与 Release 自动生成的 **Source code** 压缩�
 
 本仓保留已公开的项目版本和原固件字节。本次只迁移项目 Tag 源码、目录与下载入口，**不重新编译固件，也不新增烧录、联网或真机验证结论**。新 Release 的 `release-manifest.json` 记录旧来源 SHA 与新路径，固件通过 `SHA256SUMS.txt` 核验。
 
-旧统一仓 [tirtc-device-example](https://github.com/tangeai/tirtc-device-example) 保留历史源码、Release 与迁移导航。各项目 `SOURCE_PROVENANCE.md` 和原始 SDK manifest 继续记录当时的来源；其中的历史路径不能当作新仓路径使用。
+旧统一仓的源码历史保留，历史固件 Release 和 Tag 已停止提供。当前项目入口统一为[小钛项目主页](https://github.com/tangeai/xiaotai)。各项目 `SOURCE_PROVENANCE.md` 和原始 SDK manifest 继续记录当时的来源；其中的历史路径不能当作新仓路径使用。
 
 ## 许可
 

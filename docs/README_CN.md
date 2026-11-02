@@ -15,7 +15,7 @@
 | [第三章：具体代码实现](03_TIRTC_DEVELOPMENT_CN.md) | 生命周期、异步回调、连接句柄与业务接入 |
 | [第四章：音视频调试](04_AUDIO_VIDEO_PIPELINE_CN.md) | 采集、缓冲、编解码和第一处异常的证据链 |
 
-第三、四章主要使用 ESP32-S3/P4 公开实现作例子，芯片专属代码和板卡细节链接到[小钛 ESP32 仓](https://github.com/tangeai/xiaotai-esp32)。这些案例用于理解方法，不证明 G32S10X 具有同样的媒体配置或真机表现。君正实际调用与构建方式以本仓工程为准。
+第三、四章主要使用 ESP32-S3/P4 公开实现作例子，芯片专属代码和板卡细节链接到[小钛 ESP32 仓](https://github.com/tangeai/xiaotai)。这些案例用于理解方法，不证明 G32S10X 具有同样的媒体配置或真机表现。君正实际调用与构建方式以本仓工程为准。
 
 ## 按任务选择
 
@@ -26,7 +26,7 @@
 | 接入供应商工程 | [SDK 集成说明](../g32s10x/sdk-integration-examples/SDK_INTEGRATION.md) |
 | 开发完整设备应用 | [G32S10X Device Monitor](../g32s10x/complete-applications/device-monitor/README.md) |
 | 下载固件、校验或只检出一个项目 | [下载与源码获取](RELEASES_CN.md) |
-| 查找 S3/P4 最小系统协议例子 | [小钛 ESP32 文档](https://github.com/tangeai/xiaotai-esp32/blob/main/docs/README_CN.md) |
+| 查找 S3/P4 最小系统协议例子 | [小钛 ESP32 文档](https://github.com/tangeai/xiaotai) |
 | 核对原始 Tag、源码与固件 | [迁移说明](MIGRATION_CN.md) / [版本与证据](VERSIONS_CN.md) |
 
 G32S10X 使用君正 Cloner 与目标板 policy。完整应用的主固件、文件系统和 data 镜像需要来自同一 Release；供应商 SDK、交叉工具链和烧录工具从授权渠道获取。

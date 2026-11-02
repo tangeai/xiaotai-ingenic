@@ -1,6 +1,6 @@
 # 第四章：音视频调试
 
-> 本章保留跨平台原理与原公开案例。S3/P4 专属实现请对照[小钛 ESP32 文档](https://github.com/tangeai/xiaotai-esp32/blob/main/docs/README_CN.md)；君正实际能力与构建入口见[G32S10X 工程](../g32s10x/sdk-integration-examples/README.md)，这些案例不代表君正真机验证。
+> 本章保留跨平台原理与原公开案例。S3/P4 专属实现请对照[小钛 ESP32 文档](https://github.com/tangeai/xiaotai)；君正实际能力与构建入口见[G32S10X 工程](../g32s10x/sdk-integration-examples/README.md)，这些案例不代表君正真机验证。
 
 连接建立以后，真正影响听感和画面的工作才刚开始：麦克风和摄像头要按固定节拍产生数据，网络会让数据迟到、乱序甚至丢失，接收端还要在不明显增加延迟的前提下稳定播放。
 

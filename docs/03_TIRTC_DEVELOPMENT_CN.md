@@ -1,6 +1,6 @@
 # 第三章：具体代码实现
 
-> 本章保留跨平台原理与原公开案例。S3/P4 专属实现请对照[小钛 ESP32 文档](https://github.com/tangeai/xiaotai-esp32/blob/main/docs/README_CN.md)；君正实际能力与构建入口见[G32S10X 工程](../g32s10x/sdk-integration-examples/README.md)，这些案例不代表君正真机验证。
+> 本章保留跨平台原理与原公开案例。S3/P4 专属实现请对照[小钛 ESP32 文档](https://github.com/tangeai/xiaotai)；君正实际能力与构建入口见[G32S10X 工程](../g32s10x/sdk-integration-examples/README.md)，这些案例不代表君正真机验证。
 
 第二章已经把各项功能摸了一遍。这一章换到开发者视角，只沿着一条主线往下走：**启动 SDK，等设备就绪，建立一条连接，在连接里收发音视频和消息，最后完整释放。**
 

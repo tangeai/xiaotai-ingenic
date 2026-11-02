@@ -11,7 +11,7 @@
 
 ## 原统一仓证据归档
 
-以下保留旧统一仓的八项目版本与证据记录，时间、SHA、构建及运行结论均指向当时的来源，**不是本次新仓构建结果**。本仓收录范围以上表为准；其他芯片请通过[小钛 ESP32](https://github.com/tangeai/xiaotai-esp32)或[小钛君正](https://github.com/tangeai/xiaotai-ingenic)查看。启明 1.0.2 的原证据保存在其项目 VERSION 和 SOURCE_PROVENANCE 中，不套用下列 Waveshare P4 记录。
+以下保留旧统一仓的八项目版本与证据记录，时间、SHA、构建及运行结论均指向当时的来源，**不是本次新仓构建结果**。本仓收录范围以上表为准；其他芯片请通过[小钛 ESP32](https://github.com/tangeai/xiaotai)或[小钛君正](https://github.com/tangeai/xiaotai-ingenic)查看。启明 1.0.2 的原证据保存在其项目 VERSION 和 SOURCE_PROVENANCE 中，不套用下列 Waveshare P4 记录。
 
 本文件把开发来源、公开项目 Tag、正式构建、Release 附件和目标板运行证据分开记录。
 八个项目分别使用自己的 SemVer；一个项目更新，不改变其他项目的 Tag。

@@ -4,7 +4,7 @@
 
 本仓保留各项目原有版权、LICENSE、NOTICE 和 SDK 来源记录。根 MIT 仅覆盖对应权利人的原创内容，不为 TiRTC SDK、供应商代码、第三方字体或媒体重新授权。没有随 SDK 附带开源许可证，不等于可以按 MIT 使用或分发；应按供应方提供的条款核对。
 
-君正项目保留供应商覆盖层、SDK 和素材来源记录。供应商完整 SDK、工具链和 Cloner 从授权渠道获取；素材的具体来源见[ASSET_LICENSE](../g32s10x/sdk-integration-examples/assets/ASSET_LICENSE.md)。S3/P4 的组件详情在[乐鑫仓](https://github.com/tangeai/xiaotai-esp32/blob/main/docs/THIRD_PARTY_NOTICES_CN.md)，下列相关内容仅作为原统一仓历史说明保留。
+君正项目保留供应商覆盖层、SDK 和素材来源记录。供应商完整 SDK、工具链和 Cloner 从授权渠道获取；素材的具体来源见[ASSET_LICENSE](../g32s10x/sdk-integration-examples/assets/ASSET_LICENSE.md)。S3/P4 的组件详情在[乐鑫仓](https://github.com/tangeai/xiaotai)，下列相关内容仅作为原统一仓历史说明保留。
 
 ## 原公开版本来源说明
 

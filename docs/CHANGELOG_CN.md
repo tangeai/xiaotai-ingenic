@@ -410,7 +410,7 @@
   `release-manifest.json` 和 `SHA256SUMS.txt` 绑定。
 - ESP32-P4 Device App `1.2.3` 本次按源码范围交付。
 - 固件构建产物只通过
-  [GitHub Releases](https://github.com/tangeai/tirtc-device-example/releases) 分发，
+  [GitHub Releases](https://github.com/tangeai/xiaotai) 分发，
   不进入 Git 历史。
 - ESP32-S3/P4 统一使用
   [Espressif ESP Tool](https://espressif.github.io/esptool-js/)；G32S10X 使用君正 Cloner。
